@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Week 2 - Home work 2</title>
+    <style>
+      h1 {
+        font-size: 40px;
+        color: green;
+      }
+      div {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      .title {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+      .hello-text {
+        color: red;
+      }
+      .hi-text {
+        color: forestgreen;
+        font-style: italic;
+      }
+      .baby-text {
+        color: orange;
+      }
+      .light-danger-text {
+        color: pink;
+      }
+      .danger-text {
+        color: blue;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>this is Week 2 - homework 2</h1>
+    <div><span class="title">1st</span> text block!</div>
+    <div class="hello-text"><span class="title">2nd</span> text block!</div>
+    <div class="hi-text">
+      <span class="title">3rd</span>
+      <span class="hi-text">text block!</span>
+    </div>
+    <div class="baby-text">
+      <span class="light-danger-text title">4th</span> text block
+    </div>
+    <div class="danger-text"><span class="title">5th</span> text block</div>
+
+    <script>
+      document
+        .querySelector('.hello-text')
+        .addEventListener(click, function () {
+          alert('Red text is clicked');
+        });
+      document.querySelector('.hi-text').addEventListener(click, function () {
+        alert('Green text is clicked');
+      });
+      document.querySelector('.baby-text').addEventListener(click, function () {
+        alert('Orange text is clicked');
+      });
+      document
+        .querySelector('.danger-text')
+        .addEventListener(click, function () {
+          alert('blue text is clicked');
+        });
+    </script>
+  </body>
+</html>

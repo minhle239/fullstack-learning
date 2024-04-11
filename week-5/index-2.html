@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Week 5</title>
+    <style>
+      div {
+        min-height: 30px;
+        background-color: #ddd;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Create Summary</button>
+    <div></div>
+    <script>
+      function createSummary(firstname, lastname, age, isHandsome) {
+        let summary = `I am ${firstname} ${lastname}, I am ${age} years old. Am I handsome? ${isHandsome}`;
+
+        return summary;
+      }
+
+      let myOwnSumary = createSummary('minh', 'Le', '33', true);
+
+      console.log(myOwnSumary);
+    </script>
+  </body>
+</html>

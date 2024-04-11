@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Week5-homework1</title>
+  </head>
+  <body>
+    <script>
+      function sum(x, y) {
+        let result = x + y;
+        return result;
+      }
+      let sumresult = sum(12, 25);
+
+      console.log('sumresult', sumresult);
+
+      function convertFtoc(Fahrenheit) {
+        let result = ((Fahrenheit - 32) * 5) / 9;
+
+        return result;
+      }
+      let cTemperature = convertFtoc(120);
+
+      console.log('temperature result', cTemperature);
+
+      function greetMe(name, age) {
+        let result = `My name is ${name} and I am ${age} years old!`;
+
+        return result;
+      }
+      let greetMeresult = greetMe('MinhLe', 33);
+
+      console.log('Greet Me result', greetMeresult);
+    </script>
+  </body>
+</html>

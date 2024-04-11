@@ -1,0 +1,192 @@
+<body>
+  <script>
+    function introduceMyself(name, number) {
+      let summary = `I am ${name}! I am ${number} years old!`;
+      return summary;
+    }
+    let summaryResult = introduceMyself('Minh', 34);
+    console.log(summaryResult);
+  </script>
+</body>
+
+<script>
+  function getSentenceLength(character) {
+    let result = `${character} has ${character.length} characters!`;
+    return result;
+  }
+  let result = getSentenceLength('Hello, World!');
+  console.log(result);
+</script>
+
+<script>
+  function sum(x, y) {
+    let result = x + y;
+
+    return result;
+  }
+  let sumresult = sum(8, 3);
+  console.log('sumn-result', sumresult);
+</script>
+
+<script>
+  function minus(x, y) {
+    let result = x - y;
+    return result;
+  }
+  let minusresult = minus(10, 5);
+  console.log('minus-result', minusresult);
+</script>
+
+<script>
+  function divide(x, y) {
+    let result = x / y;
+    return result;
+  }
+  let divideresult = divide(10, 5);
+  console.log('divide-result', divideresult);
+</script>
+
+<script>
+  function multiply(x, y) {
+    let result = x * y;
+    return result;
+  }
+  let multiplyresult = multiply(10, 20);
+  console.log('multiply-result', multiplyresult);
+</script>
+
+<script>
+  function sumAverage(x, y) {
+    let result = (x + y) / 2;
+    return result;
+  }
+  let averageresult = sumAverage(5, 10);
+  console.log('getAverage', averageresult);
+</script>
+
+<script>
+  function checkExamResult(Hscore) {
+    if (Hscore >= 50) {
+      return 'Pass';
+    } else {
+      return 'Fail';
+    }
+  }
+  let Hscore = 40;
+  console.log('Exam result', checkExamResult(Hscore));
+</script>
+
+<script>
+  function getGrade(score) {
+    if (score >= 90) {
+      return 'A';
+    } else if (score >= 80) {
+      return 'B';
+    } else if (score >= 70) {
+      return 'C';
+    } else if (score >= 60) {
+      return 'D';
+    } else if (score >= 50) {
+      return 'E';
+    } else {
+      return 'F';
+    }
+  }
+  let score = 75;
+  console.log('Grade', getGrade(score));
+</script>
+
+<script>
+  function printNumbers(number) {
+    for (let i = 1; i <= number; i++) {
+      console.log(i);
+    }
+  }
+  printNumbers(3);
+</script>
+
+<script>
+  function printNames(names) {
+    for (let i = 0; i < names.length; i++) {
+      console.log(names[i]);
+    }
+  }
+  const exampleNames = ['Minh', 'Phuoc', 'Hoang', 'Roger'];
+  printNames(exampleNames);
+</script>
+
+<script>
+  function printFavouriteGames(games) {
+    for (let i = 0; i < games.length; i++) {
+      console.log(`${i + 1}. I love ${games[i]}`);
+    }
+  }
+  const FavouriteGames = ['Roblox', 'Zelda', 'Alone in the dark'];
+  printFavouriteGames(FavouriteGames);
+</script>
+
+<script>
+  function findAnimalIndex(animals, animalName) {
+    const index = animals.indexOf(animalName);
+    if (index !== -1) {
+      return index;
+    } else {
+      return 'Not Found';
+    }
+  }
+  console.log(findAnimalIndex(['Elephant', 'Lion', 'Eagle'], 'Lion'));
+  console.log(findAnimalIndex(['Elephant', 'Lion', 'Eagle'], 'Ant'));
+</script>
+
+<script>
+  function getNumbersLargerThanTen(numbers) {
+    return numbers.filter((number) => number > 10);
+  }
+  const inputNumbers = [5, 12, 8, 15, 3];
+  const resultg = getNumbersLargerThanTen(inputNumbers);
+
+  console.log(resultg);
+</script>
+
+<script>
+  function sum(numbers) {
+    return numbers.reduce(
+      (accumulator, currentValue) => accumulator + currentValue,
+      0
+    );
+  }
+  const inputsNumbers = [1, 3, 5];
+  const total = sum(inputsNumbers);
+
+  console.log(total);
+</script>
+
+<script>
+  function sum(numbers) {
+    return numbers.reduce(
+      (accumulator, currentValue) => accumulator + currentValue,
+      0
+    );
+  }
+  function getArrayAverage(numbers) {
+    if (numbers.length === 0) {
+      return 0;
+    }
+    const total = sum(numbers);
+    const average = total / numbers.length;
+    return average;
+  }
+  const inputssNumbers = [1, 3, 5];
+  const average = getArrayAverage(inputssNumbers);
+
+  console.log(average);
+</script>
+
+<script>
+  function multiplicationTable(numbers) {
+    for (let i = 1; i <= 10; i++) {
+      console.log(`${numbers} * ${i} = ${numbers * i}`);
+    }
+  }
+  multiplicationTable(9);
+</script>
